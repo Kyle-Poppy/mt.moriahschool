@@ -22,10 +22,10 @@ const navItems: NavItem[] = [
   {
     label: 'Admissions',
     children: [
-      { label: 'Early Childhood (Play Group)', to: '/admissions#early' },
+      { label: 'Foundation Class (Play Group)', to: '/admissions#early' },
       { label: 'Early Childhood (PP1–PP2)', to: '/admissions#early' },
       { label: 'Primary (Grade 1–6)', to: '/admissions#primary' },
-      { label: 'Junior Secondary (Grade 7–9)', to: '/admissions#secondary' },
+      { label: 'Junior School (Grade 7–9)', to: '/admissions#secondary' },
     ],
   },
   { label: 'Academics', to: '/academics' },
