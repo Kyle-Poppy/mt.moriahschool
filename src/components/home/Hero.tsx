@@ -1,0 +1,127 @@
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
+
+const BASE = 'https://mount-moriah-school-main.vercel.app/images'
+
+const slides = [
+  {
+    image: `${BASE}/hero1.jpg`,
+    title: 'Learning Today,\nFor A Better Tomorrow',
+    subtitle: 'Providing quality Christian education that nurtures academic excellence, discipline and godly character.',
+  },
+  {
+    image: `${BASE}/hero2.jpg`,
+    title: 'Academic Excellence\nWith Christian Values',
+    subtitle: 'Empowering learners through the CBE curriculum in a caring and supportive environment.',
+  },
+  {
+    image: `${BASE}/hero3.jpg`,
+    title: 'Building Future\nLeaders Today',
+    subtitle: 'Developing confident, responsible and innovative learners prepared for the future.',
+  },
+  {
+    image: `${BASE}/hero4.jpg`,
+    title: 'A Safe And\nNurturing Environment',
+    subtitle: 'Every child is valued, encouraged and inspired to achieve their full potential.',
+  },
+  {
+    image: `${BASE}/hero5.jpg`,
+    title: 'Join Mount Moriah\nInternational Christian School',
+    subtitle: 'Admissions are open for PP1, PP2, Primary and Junior Secondary.',
+  },
+]
+
+const LOGO = `${BASE}/logo.png`
+
+export default function Hero() {
+  const [current, setCurrent] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length)
+    }, 5000)
+    return () => clearInterval(timer)
+  }, [])
+
+  const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length)
+  const next = () => setCurrent((c) => (c + 1) % slides.length)
+
+  return (
+    <section className="relative h-[90vh] min-h-[560px] overflow-hidden">
+      {slides.map((slide, i) => (
+        <div
+          key={i}
+          className={`absolute inset-0 transition-opacity duration-1000 ${i === current ? 'opacity-100' : 'opacity-0'}`}
+        >
+          <img
+            src={slide.image}
+            alt={slide.title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-700/75 to-primary-900/30" />
+        </div>
+      ))}
+
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center">
+        <div className="max-w-7xl mx-auto px-6 w-full">
+          <div className="max-w-2xl">
+            <div className="mb-5">
+              <img
+  src={LOGO}
+  alt="Mount Moriah Logo"
+  className="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-xl mb-4"
+/>
+              <div className="inline-block bg-gold-500 text-primary-900 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded">
+                Mount Moriah International Christian School
+              </div>
+              <p className="text-gold-300 mt-2 text-sm md:text-base font-medium">
+                Learning Today for a Better Tomorrow
+              </p>
+            </div>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 whitespace-pre-line">
+              {slides[current].title}
+            </h1>
+            <p className="text-primary-100 text-lg md:text-xl mb-8 leading-relaxed">
+              {slides[current].subtitle}
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/admissions"
+                className="bg-gold-500 hover:bg-gold-600 text-primary-900 font-bold px-8 py-3 rounded-lg transition-colors shadow-lg">
+                Apply for Admission
+              </Link>
+              <Link to="/about"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary-500 font-bold px-8 py-3 rounded-lg transition-colors">
+                About Our School
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Arrows */}
+      <button onClick={prev}
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors">
+        <ChevronLeft size={22} />
+      </button>
+      <button onClick={next}
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center transition-colors">
+        <ChevronRight size={22} />
+      </button>
+
+      {/* Dots */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex gap-2">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`h-2 rounded-full transition-all duration-300 ${
+              i === current ? 'bg-gold-500 w-8' : 'bg-white/50 w-2'
+            }`}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
