@@ -75,10 +75,10 @@ export default function Footer() {
           <h4 className="font-heading font-bold text-lg mb-4 text-secondary-400">Academics</h4>
           <ul className="space-y-2 text-sm text-primary-200">
             {[
-              { label: 'Early Childhood (Playgroup)', to: '/admissions#early' },
+              { label: 'Foundation Class (Playgroup)', to: '/admissions#early' },
               { label: 'Early Childhood (PP1–PP2)', to: '/admissions#early' },
               { label: 'Primary (Grade 1–6)', to: '/admissions#primary' },
-              { label: 'Junior Secondary (Grade 7–9)', to: '/admissions#secondary' },
+              { label: 'Junior School (Grade 7–9)', to: '/admissions#secondary' },
               { label: 'CBE Curriculum', to: '/academics#cbc' },
               { label: 'Co-curricular Activities', to: '/academics#cocurricular' },
               { label: 'Fee Structure', to: '/about#fees' },
