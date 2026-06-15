@@ -4,7 +4,7 @@ import { CheckCircle, FileText, Calendar, Phone } from 'lucide-react'
 const levels = [
   {
     id: 'early',
-    label: 'Early Childhood',
+    label: 'Foundation Class',
     grades: 'Play Group, Pre-Primary 1 & 2',
     ages: 'Ages 4 – 6',
     image: '/images/admission/early-childhood.jpeg',
@@ -18,16 +18,16 @@ const levels = [
     ages: 'Ages 6 – 13',
     image: '/images/admission/primary.jpeg',
     desc: 'Our primary programme delivers a rigorous, integrated CBE curriculum that builds strong foundations in literacy, numeracy, sciences and social studies alongside character formation.',
-    requirements: ['Birth certificate (copy)', 'Passport-size photograph', 'Previous school reports (last 2 terms)', 'Transfer letter (for transfers)', 'Completed application form', 'Placement test results'],
+    requirements: ['Birth certificate (copy)', 'Passport-size photograph', 'Previous school reports (last 2 terms)', 'Transfer letter (for transfers)', 'Completed application form', ],
   },
   {
     id: 'secondary',
-    label: 'Junior Secondary',
+    label: 'Junior School',
     grades: 'Grade 7 – 9',
     ages: 'Ages 13 – 16',
     image: '/images/admission/junior-secondary.jpeg',
-    desc: 'Our junior secondary programme prepares students for the senior school pathway through CBE, with specialised teachers, coding classes and leadership development.',
-    requirements: ['Birth certificate (copy)', 'Passport-size photograph', 'KNAT/Grade 6 assessment results', 'Previous school reports', 'Transfer letter & leaving certificate', 'Completed application form', 'Placement interview'],
+    desc: 'Our junior school programme prepares students for the senior school pathway through CBE, with specialised teachers, coding classes and leadership development.',
+    requirements: ['Birth certificate (copy)', 'Passport-size photograph', 'Grade 6 assessment results', 'Previous school reports', 'Transfer letter & leaving certificate', 'Completed application form'],
   },
 ]
 
