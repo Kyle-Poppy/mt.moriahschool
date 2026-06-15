@@ -1,5 +1,5 @@
 const stats = [
-  { value: '1,000+', label: 'Students Enrolled' },
+  { value: '200+', label: 'Students Enrolled' },
   { value: '30+', label: 'Qualified Teachers' },
   { value: '10+', label: 'Years of Excellence' },
   { value: '98%', label: 'Transition Rate' },
