@@ -11,17 +11,17 @@ const slides = [
     subtitle: 'Providing quality Christian education that nurtures academic excellence, discipline and godly character.',
   },
   {
-    image: `${BASE}/hero2.jpg`,
+    image: `${BASE}/hero2.jpeg`,
     title: 'Academic Excellence\nWith Christian Values',
     subtitle: 'Empowering learners through the CBE curriculum in a caring and supportive environment.',
   },
   {
-    image: `${BASE}/hero3.jpg`,
+    image: `${BASE}/hero3.jpeg`,
     title: 'Building Future\nLeaders Today',
     subtitle: 'Developing confident, responsible and innovative learners prepared for the future.',
   },
   {
-    image: `${BASE}/hero4.jpg`,
+    image: `${BASE}/hero4.jpeg`,
     title: 'A Safe And\nNurturing Environment',
     subtitle: 'Every child is valued, encouraged and inspired to achieve their full potential.',
   },
