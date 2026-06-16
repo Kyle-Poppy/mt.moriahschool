@@ -3,25 +3,25 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
 
 const testimonials = [
   {
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=8',
     name: 'Mary Wanjiru',
     role: 'Parent, Grade 4',
     quote: 'The teachers at Mount Moriah truly care about each child. My daughter has grown in confidence, academics and most importantly, in faith. We are so grateful.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80',
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=8',
     name: 'David Kamau',
     role: 'Parent, Grade 2 & Grade 6',
     quote: 'Excellent environment, spacious classrooms and a very focused Christian foundation. I have two children here and I could not be happier.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=80',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&q=8',
     name: 'Grace Achieng',
     role: 'Parent, PP2',
     quote: 'From the very first day, the teachers made my child feel welcome and loved. The school\'s commitment to CBC and faith-based learning is outstanding.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=8',
     name: 'James Otieno',
     role: 'Parent, Grade 7',
     quote: 'The discipline and academic standards here are top-notch. My son improved tremendously in his first term. The coding classes are a wonderful bonus!',
