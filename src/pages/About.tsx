@@ -1,4 +1,5 @@
 import { CheckCircle } from 'lucide-react'
+import { Helmet } from 'react-helmet-async'
 
 const team = [
   { name: 'Dr. Ruth Njoroge', role: 'School Principal', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80' },
@@ -20,9 +21,25 @@ const values = [
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>About Us | Mount Moriah International Christian School</title>
+
+        <meta
+          name="description"
+          content="Learn about Mount Moriah International Christian School, our mission, vision, values and commitment to academic excellence and Christian character."
+        />
+      </Helmet>
+
       {/* Page hero */}
-      <div className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
-        style={{backgroundImage: "url('/images/about/about.jpeg')",backgroundSize: 'cover',backgroundPosition: 'center'}}>
+      <div
+        className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
+        style={{
+          backgroundImage: "url('/images/about/about.jpeg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+
         <div className="relative z-10">
           <h1 className="font-heading text-4xl font-bold text-white mb-2">About Us</h1>
           <p className="text-primary-200">Home › About Us</p>
@@ -76,13 +93,13 @@ export default function About() {
           <div className="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-primary-500">
             <h3 className="font-heading text-2xl font-bold text-primary-500 mb-4">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">
-              To provide excellent academic founded upon and integrated with God's word that offers children the opportunity to grow to their fullest pontential intellectually, social, physically and spiritually.
+              To provide excellent academic founded upon and integrated with God's word that offers children the opportunity to grow to their fullest potential intellectually, social, physically and spiritually.
             </p>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-sm border-t-4 border-secondary-500">
             <h3 className="font-heading text-2xl font-bold text-primary-500 mb-4">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
-              To prepare everychild regardless of their background for success in life. 
+              To prepare every child regardless of their background for success in life. 
             </p>
           </div>
         </div>
