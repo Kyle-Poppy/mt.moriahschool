@@ -10,27 +10,24 @@ import CTASection from '../components/home/CTASection'
 import { Helmet } from 'react-helmet-async'
 
 export default function Home() {
-  <>
-  <Helmet>
-    <title>
-      Mount Moriah International Christian School | Learning Today for a Better Tomorrow
-    </title>
-
-    <meta
-      name="description"
-      content="Mount Moriah International Christian School provides quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character."
-    />
-
-    <meta
-      name="keywords"
-      content="Mount Moriah School, Christian School Kenya, CBC School, Junior Secondary School, Primary School, PP1, PP2"
-    />
-  </Helmet>
-
-  {/* existing page content */}
-</>
   return (
     <>
+      <Helmet>
+        <title>
+          Mount Moriah International Christian School | Learning Today for a Better Tomorrow
+        </title>
+
+        <meta
+          name="description"
+          content="Mount Moriah International Christian School provides quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character."
+        />
+
+        <meta
+          name="keywords"
+          content="Mount Moriah School, Christian School Kenya, CBC School, Junior School, Primary School, Foundation Class, Nairobi"
+        />
+      </Helmet>
+
       <Hero />
       <Features />
       <Stats />
