@@ -6,33 +6,34 @@ export default function WhatsAppButton() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       {/* Curved Gold Text */}
-      <svg
-        width="120"
-        height="120"
-        className="absolute -top-12 -left-4 pointer-events-none"
-      >
-        <defs>
-          <path
-            id="talkPath"
-            d="M20,85 A40,40 0 0,1 100,85"
-          />
-        </defs>
+<svg
+  width="140"
+  height="140"
+  className="absolute -top-16 -left-6 pointer-events-none"
+>
+  <defs>
+    <path
+      id="talkPath"
+      d="M15,100 A55,55 0 0,1 125,100"
+      fill="none"
+    />
+  </defs>
 
-        <text
-          fill="#D4AF37"
-          fontSize="14"
-          fontWeight="700"
-          letterSpacing="2"
-        >
-          <textPath
-            href="#talkPath"
-            startOffset="50%"
-            textAnchor="middle"
-          >
-            TALK TO US!
-          </textPath>
-        </text>
-      </svg>
+  <text
+    fill="#D4AF37"
+    fontSize="16"
+    fontWeight="800"
+    letterSpacing="3"
+  >
+    <textPath
+      href="#talkPath"
+      startOffset="50%"
+      textAnchor="middle"
+    >
+      TALK TO US!
+    </textPath>
+  </text>
+</svg>
 
       {/* WhatsApp Button */}
       <a
