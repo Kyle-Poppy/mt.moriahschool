@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { CheckCircle, FileText, Calendar, Phone } from 'lucide-react'
+import { Helmet } from 'react-helmet-async'
 
 const levels = [
   {
@@ -41,6 +42,14 @@ const steps = [
 export default function Admissions() {
   return (
     <>
+    <Helmet>
+  <title>Admissions | Mount Moriah International Christian School</title>
+
+  <meta
+    name="description"
+    content="Admissions are open for Early Childhood, Primary and Junior Secondary. Learn about requirements, procedures and enrollment."
+  />
+</Helmet>
       <div className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
         style={{
   backgroundImage: "url('/images/admission/admissions-banner.jpeg')",
@@ -60,7 +69,7 @@ export default function Admissions() {
           <p className="text-secondary-500 font-semibold text-sm tracking-widest uppercase mb-2">Welcome</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-500 mb-4">Begin the Journey</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            We warmly welcome families who share our commitment to faith-based, excellent education. Applications for the 2026/2027 academic year are now open. Select your child's level below to learn more.
+            We warmly welcome families who share our commitment to faith-based, excellent education. We are currently accepting applications for Foundation Class, Primary and Junior School. Select your child's level below to learn more.
           </p>
         </div>
       </section>
