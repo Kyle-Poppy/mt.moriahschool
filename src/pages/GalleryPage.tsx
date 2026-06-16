@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { X } from 'lucide-react'
+import { Helmet } from 'react-helmet-async'
 
 const photos = [
   {
@@ -295,6 +296,19 @@ export default function GalleryPage() {
 
   return (
     <>
+    <Helmet>
+  <title>Photo Gallery | Mount Moriah International Christian School</title>
+
+  <meta
+    name="description"
+    content="Explore our CBC curriculum, Coding and STEM programmes, Christian education, sports, co-curricular activities and holistic learning approach."
+  />
+
+  <meta
+    name="keywords"
+    content="CBC Curriculum, Coding, STEM, Christian Education, Primary School, Junior School, Mount Moriah School Nairobi"
+  />
+</Helmet>
       <div className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
         style={{ backgroundImage: "url('/images/gallery/campus/campus1.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="absolute inset-0 bg-primary-900/70" />
