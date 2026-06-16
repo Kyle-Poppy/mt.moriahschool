@@ -48,7 +48,7 @@ const navItems: NavItem[] = [
   { label: 'Contact Us', to: '/contact' },
 ]
 
-const LOGO = 'https://mount-moriah-school-main.vercel.app/images/logo.png'
+const LOGO = '/images/logo.png'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
