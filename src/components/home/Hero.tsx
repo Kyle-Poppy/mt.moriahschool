@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-const BASE = 'https://mount-moriah-school-main.vercel.app/images'
+const BASE = '/images'
 
 const slides = [
   {
