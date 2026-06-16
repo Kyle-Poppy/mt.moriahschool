@@ -1,8 +1,22 @@
 import { FileText, Calendar, Download, BookOpen } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 export default function Publications() {
   return (
     <>
+    <Helmet>
+  <title>Publications | Mount Moriah International Christian School</title>
+
+  <meta
+    name="description"
+    content="Access Mount Moriah International Christian School publications including fee structures, newsletters, school documents, resources and event information."
+  />
+
+  <meta
+    name="keywords"
+    content="School Publications, Fee Structure, School Newsletters, School Documents, Events Calendar, Mount Moriah School Nairobi"
+  />
+</Helmet>
       {/* Hero Banner */}
       <section
   className="relative h-72 flex items-center justify-center text-center"
