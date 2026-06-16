@@ -4,45 +4,48 @@ export default function WhatsAppButton() {
   )
 
   return (
-    <a
-      href={`https://wa.me/254705473250?text=${message}`}
-      target="_blank"
-      rel="noreferrer"
-      aria-label="Chat on WhatsApp"
-      className="fixed bottom-6 right-6 z-50"
-    >
-      <div className="relative w-24 h-24">
-        {/* Curved Text */}
-        <svg
-          className="absolute inset-0 w-full h-full"
-          viewBox="0 0 100 100"
+    <div className="fixed bottom-6 right-6 z-50">
+      {/* Curved Gold Text */}
+      <svg
+        width="120"
+        height="120"
+        className="absolute -top-12 -left-4 pointer-events-none"
+      >
+        <defs>
+          <path
+            id="talkPath"
+            d="M20,85 A40,40 0 0,1 100,85"
+          />
+        </defs>
+
+        <text
+          fill="#D4AF37"
+          fontSize="14"
+          fontWeight="700"
+          letterSpacing="2"
         >
-          <defs>
-            <path
-              id="curve"
-              d="M15,60 A35,35 0 0,1 85,60"
-            />
-          </defs>
-
-          <text
-            fill="#22c55e"
-            fontSize="11"
-            fontWeight="700"
-            letterSpacing="1"
+          <textPath
+            href="#talkPath"
+            startOffset="50%"
+            textAnchor="middle"
           >
-            <textPath href="#curve" startOffset="50%" textAnchor="middle">
-              TALK TO US!
-            </textPath>
-          </text>
-        </svg>
+            TALK TO US!
+          </textPath>
+        </text>
+      </svg>
 
-        {/* WhatsApp Button */}
-        <div className="absolute bottom-0 right-0 w-14 h-14 rounded-full shadow-xl flex items-center justify-center bg-green-500 hover:bg-green-600 transition-colors">
-          <svg viewBox="0 0 32 32" className="w-8 h-8 fill-white">
-            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.734 5.476 2.02 7.785L0 32l8.43-2.007A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.266 13.266 0 01-6.76-1.843l-.484-.287-5.003 1.192 1.215-4.874-.316-.5A13.258 13.258 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.273-9.937c-.398-.199-2.355-1.162-2.72-1.294-.364-.133-.63-.199-.895.199-.265.398-1.027 1.294-1.26 1.56-.232.265-.464.298-.862.1-.398-.2-1.68-.619-3.2-1.977-1.183-1.056-1.982-2.36-2.214-2.758-.232-.398-.025-.613.175-.811.179-.178.398-.464.597-.696.2-.232.265-.398.398-.664.133-.265.066-.497-.033-.696-.1-.199-.895-2.157-1.227-2.953-.322-.775-.65-.669-.895-.682-.232-.013-.497-.016-.762-.016s-.696.1-1.062.497c-.365.398-1.393 1.36-1.393 3.316s1.426 3.846 1.625 4.111c.199.265 2.806 4.283 6.796 6.007.95.41 1.692.655 2.27.838.953.304 1.82.261 2.506.158.764-.114 2.355-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.265-.762-.464z" />
-          </svg>
-        </div>
-      </div>
-    </a>
+      {/* WhatsApp Button */}
+      <a
+        href={`https://wa.me/254705473250?text=${message}`}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="w-16 h-16 rounded-full shadow-xl flex items-center justify-center bg-green-500 hover:bg-green-600 transition-colors"
+      >
+        <svg viewBox="0 0 32 32" className="w-9 h-9 fill-white">
+          <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.734 5.476 2.02 7.785L0 32l8.43-2.007A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.266 13.266 0 01-6.76-1.843l-.484-.287-5.003 1.192 1.215-4.874-.316-.5A13.258 13.258 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333z" />
+        </svg>
+      </a>
+    </div>
   )
 }
