@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from 'lucide-react'
 import { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
@@ -27,6 +28,14 @@ ${form.message}`
 
   return (
     <>
+    <Helmet>
+  <title>Contact Us | Mount Moriah International Christian School</title>
+
+  <meta
+    name="description"
+    content="Contact Mount Moriah International Christian School in Fedha Estate, Nairobi. Reach us for admissions, school tours, curriculum information and general enquiries."
+  />
+</Helmet>
       <div
   className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
   style={{
