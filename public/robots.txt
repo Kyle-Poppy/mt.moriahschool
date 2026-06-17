@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://www.mountmoriahschool.sc.ke/sitemap.xml
+Sitemap: https://mt-moriahschool.vercel.app/sitemap.xml
