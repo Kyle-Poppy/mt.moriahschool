@@ -31,7 +31,7 @@ export default function PhotoGallery() {
             <div key={i} className="aspect-square rounded-xl overflow-hidden group cursor-pointer">
               <img
                 src={src}
-                alt={`School life ${i + 1}`}
+                alt="Students participating in school activities at Mount Moriah International Christian School"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>

@@ -301,12 +301,12 @@ export default function GalleryPage() {
 
   <meta
     name="description"
-    content="Explore our CBC curriculum, Coding and STEM programmes, Christian education, sports, co-curricular activities and holistic learning approach."
+    content="Browse photos from Mount Moriah International Christian School showcasing campus life, classrooms, sports, school events, student activities and achievements."
   />
 
   <meta
     name="keywords"
-    content="CBC Curriculum, Coding, STEM, Christian Education, Primary School, Junior School, Mount Moriah School Nairobi"
+    content="Photo Gallery, School Photos, Campus Life, School Events, Sports Day, Student Activities, Mount Moriah School Nairobi"
   />
 </Helmet>
       <div className="relative h-64 bg-primary-500 flex items-center justify-center text-center"
@@ -359,7 +359,7 @@ export default function GalleryPage() {
             {filteredPhotos.map((p, i) => (
               <div key={i} onClick={() => setSelectedPhoto(p)}
                 className="aspect-square rounded-2xl overflow-hidden group cursor-pointer relative shadow-md hover:shadow-xl transition-all duration-300">
-                <img src={p.src} alt={p.caption} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img src={p.src} alt={`${p.caption} - Mount Moriah International Christian School`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <div className="absolute top-3 left-3 bg-primary-500/90 text-white text-xs font-semibold px-3 py-1 rounded-full">
   {p.category}
 </div>
@@ -387,7 +387,7 @@ export default function GalleryPage() {
 
           <img
             src={selectedPhoto.src}
-            alt={selectedPhoto.caption}
+            alt={`${selectedPhoto.caption} - Mount Moriah International Christian School`}
             className="max-w-full max-h-full rounded-lg shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           />

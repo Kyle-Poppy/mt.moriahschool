@@ -5,6 +5,20 @@ export default function Publications() {
   return (
     <>
     <Helmet>
+      <meta
+  property="og:title"
+  content="Publications | Mount Moriah International Christian School"
+/>
+
+<meta
+  property="og:description"
+  content="Access school publications, newsletters, fee structures and important resources from Mount Moriah International Christian School."
+/>
+
+<meta
+  property="og:type"
+  content="website"
+/>
   <title>Publications | Mount Moriah International Christian School</title>
 
   <meta
