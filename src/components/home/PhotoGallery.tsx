@@ -9,6 +9,9 @@ const images = [
   '/images/photo-gallery/school6.jpeg',
   '/images/photo-gallery/school7.jpeg',
   '/images/photo-gallery/school8.jpeg',
+  '/images/photo-gallery/school9.jpeg',
+  '/images/photo-gallery/school10.jpeg',
+  '/images/photo-gallery/school11.jpeg',
 ]
 
 export default function PhotoGallery() {
