@@ -30,6 +30,21 @@ const slides = [
     title: 'Join Mount Moriah\nInternational Christian School',
     subtitle: 'Admissions are open for PP1, PP2, Primary and Junior Secondary.',
   },
+  {
+  image: `${BASE}/hero6.jpg`,
+  title: 'Inspiring A Love\nFor Learning',
+  subtitle: 'Empowering learners through reading, discovery and knowledge that builds a strong foundation for success.',
+},
+  {
+  image: `${BASE}/hero7.jpg`,
+  title: 'Strategic Thinkers,\nFuture Leaders',
+  subtitle: 'Developing critical thinking, creativity and problem-solving skills through engaging learning experiences.',
+},
+    {
+    image: `${BASE}/hero8.jpg`,
+    title: 'Worship, Faith\nAnd Fellowship',
+    subtitle: 'Nurturing spiritual growth through worship, prayer and Christian values that inspire a lifelong relationship with God.',
+  },
 ]
 
 const LOGO = `${BASE}/logo.png`
