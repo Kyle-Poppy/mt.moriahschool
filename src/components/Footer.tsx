@@ -58,7 +58,7 @@ export default function Footer() {
               { label: 'Admissions', to: '/admissions' },
               { label: 'Academics', to: '/academics' },
               { label: 'Photo Gallery', to: '/gallery' },
-              { label: 'Events Calendar', to: '/about#events' },
+              { label: 'Events Calendar', to: '/' },
               { label: 'Contact Us', to: '/contact' },
             ].map((l) => (
               <li key={l.label}>
@@ -79,7 +79,7 @@ export default function Footer() {
               { label: 'Early Childhood (PP1–PP2)', to: '/admissions#early' },
               { label: 'Primary (Grade 1–6)', to: '/admissions#primary' },
               { label: 'Junior School (Grade 7–9)', to: '/admissions#secondary' },
-              { label: 'CBE Curriculum', to: '/academics#cbc' },
+              { label: 'CBE Curriculum', to: '/academics#cbe' },
               { label: 'Co-curricular Activities', to: '/academics#cocurricular' },
               { label: 'Fee Structure', to: '/about#fees' },
             ].map((l) => (
