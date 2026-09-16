@@ -31,20 +31,20 @@ const slides = [
     subtitle: 'Admissions are open for PP1, PP2, Primary and Junior Secondary.',
   },
   {
-  image: `${BASE}/hero6.jpeg`,
-  title: 'Inspiring A Love\nFor Learning',
-  subtitle: 'Empowering learners through reading, discovery and knowledge that builds a strong foundation for success.',
-},
+    image: `${BASE}/hero6.jpeg`,
+    title: 'Inspiring A Love\nFor Learning',
+    subtitle: 'Empowering learners through reading, discovery and knowledge that builds a strong foundation for success.',
+  },
   {
-  image: `${BASE}/hero7.jpeg`,
-  title: 'Strategic Thinkers,\nFuture Leaders',
-  subtitle: 'Developing critical thinking, creativity and problem-solving skills through engaging learning experiences.',
-},
-    {
+    image: `${BASE}/hero7.jpeg`,
+    title: 'Strategic Thinkers,\nFuture Leaders',
+    subtitle: 'Developing critical thinking, creativity and problem-solving skills through engaging learning experiences.',
+  },
+  {
     image: `${BASE}/hero8.jpeg`,
     title: 'Worship, Faith\nAnd Fellowship',
     subtitle: 'Nurturing spiritual growth through worship, prayer and Christian values that inspire a lifelong relationship with God.',
-  },
+  }
 ]
 
 const LOGO = `${BASE}/logo.png`
@@ -71,8 +71,11 @@ export default function Hero() {
         >
           <img
             src={slide.image}
-            alt={slide.title}
+            alt={slide.title.replace('\n', ' ')} // Cleaned up for Google SEO
             className="w-full h-full object-cover"
+            loading={i === 0 ? "eager" : "lazy"} // Only loads the first image immediately
+            fetchPriority={i === 0 ? "high" : "auto"} // Tells the browser the first image is critical
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-900/90 via-primary-700/75 to-primary-900/30" />
         </div>
@@ -84,10 +87,12 @@ export default function Hero() {
           <div className="max-w-2xl">
             <div className="mb-5">
               <img
-  src={LOGO}
-  alt="Mount Moriah Logo"
-  className="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-xl mb-4"
-/>
+                src={LOGO}
+                alt="Mount Moriah International Christian School Logo" // Better SEO alt text
+                className="w-36 h-36 md:w-40 md:h-40 rounded-full object-cover border-4 border-white shadow-xl mb-4"
+                fetchPriority="high"
+                decoding="async"
+              />
               <div className="inline-block bg-gold-500 text-primary-900 text-xs font-bold tracking-widest uppercase px-4 py-1.5 rounded">
                 Mount Moriah International Christian School
               </div>
