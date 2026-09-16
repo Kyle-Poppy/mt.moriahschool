@@ -23,11 +23,15 @@ export default function About() {
     <>
       <Helmet>
         <title>About Us | Mount Moriah International Christian School</title>
-
         <meta
           name="description"
           content="Learn about Mount Moriah International Christian School, our mission, vision, values and commitment to academic excellence and Christian character."
         />
+        {/* Open Graph Tags for About Page */}
+        <meta property="og:title" content="About Us | Mount Moriah International Christian School" />
+        <meta property="og:description" content="Learn about our mission, vision, values and commitment to academic excellence and Christian character." />
+        <meta property="og:url" content="https://www.mountmoriahinternationalchristianschool.com/about" />
+        <link rel="canonical" href="https://www.mountmoriahinternationalchristianschool.com/about" />
       </Helmet>
 
       {/* Page hero */}
@@ -39,7 +43,6 @@ export default function About() {
           backgroundPosition: 'center',
         }}
       >
-
         <div className="relative z-10">
           <h1 className="font-heading text-4xl font-bold text-white mb-2">About Us</h1>
           <p className="text-primary-200">Home › About Us</p>
@@ -73,17 +76,18 @@ export default function About() {
             </ul>
           </div>
           <div className="relative">
-  <img
-    src="/images/about/about2.jpeg"
-    alt="School campus"
-    className="w-full h-96 object-cover rounded-2xl shadow-xl"
-  />
-
-  <div className="absolute -bottom-6 -left-6 bg-secondary-500 text-white rounded-xl p-5 shadow-xl">
-    <div className="font-heading font-bold text-3xl">10+</div>
-    <div className="text-sm">Years of Excellence</div>
-  </div>
-</div>
+            <img
+              src="/images/about/about2.jpeg"
+              alt="Mount Moriah School campus building"
+              className="w-full h-96 object-cover rounded-2xl shadow-xl"
+              loading="lazy"
+              decoding="async"
+            />
+            <div className="absolute -bottom-6 -left-6 bg-secondary-500 text-white rounded-xl p-5 shadow-xl">
+              <div className="font-heading font-bold text-3xl">10+</div>
+              <div className="text-sm">Years of Excellence</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -113,6 +117,9 @@ export default function About() {
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-500 mb-4">Our Team</h2>
             <p className="text-gray-500 max-w-xl mx-auto">Dedicated professionals committed to shaping the next generation with faith, expertise and love.</p>
           </div>
+          
+          {/* THE TEAM GRID IS COMMENTED OUT BELOW. Remove the {/* and */} to show the pictures again. */}
+          {/* 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {team.map((m) => (
               <div key={m.name} className="text-center group">
@@ -123,7 +130,9 @@ export default function About() {
                 <p className="text-sm text-secondary-500 font-medium">{m.role}</p>
               </div>
             ))}
-          </div>
+          </div> 
+          */}
+
         </div>
       </section>
     </>
