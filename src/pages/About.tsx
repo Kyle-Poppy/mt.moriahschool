@@ -1,6 +1,9 @@
 import { CheckCircle } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 
+{/* THE TEAM DATA IS COMMENTED OUT HERE TO PREVENT BUILD ERRORS */}
+{/* Remove the block comments when you are ready to show the team. */}
+/*
 const team = [
   { name: 'Dr. Ruth Njoroge', role: 'School Principal', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80' },
   { name: 'Mr. Samuel Mwangi', role: 'Deputy Principal — Academics', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80' },
@@ -9,6 +12,7 @@ const team = [
   { name: 'Ms. Faith Wambua', role: 'Head of Junior Secondary', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80' },
   { name: 'Mr. Daniel Ochieng', role: 'Dean of Students', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80' },
 ]
+*/
 
 const values = [
   'Faith — We root every activity in Christian principles and prayer.',
@@ -118,7 +122,7 @@ export default function About() {
             <p className="text-gray-500 max-w-xl mx-auto">Dedicated professionals committed to shaping the next generation with faith, expertise and love.</p>
           </div>
           
-          {/* THE TEAM GRID IS COMMENTED OUT BELOW. Remove the {/* and */} to show the pictures again. */}
+          {/* THE TEAM GRID IS COMMENTED OUT BELOW. Remove the {/* and */} {/* to show the pictures again. */}
           {/* 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
             {team.map((m) => (
