@@ -1,17 +1,18 @@
 import { Link } from 'react-router-dom'
 
+// Transformed into an array of objects to provide unique, SEO-boosting alt text for every image.
 const images = [
-  '/images/photo-gallery/school1.jpeg',
-  '/images/photo-gallery/school2.jpeg',
-  '/images/photo-gallery/school3.jpeg',
-  '/images/photo-gallery/school4.jpeg',
-  '/images/photo-gallery/school5.jpeg',
-  '/images/photo-gallery/school6.jpeg',
-  '/images/photo-gallery/school7.jpeg',
-  '/images/photo-gallery/school8.jpeg',
-  '/images/photo-gallery/school9.jpeg',
-  '/images/photo-gallery/school10.jpeg',
-  '/images/photo-gallery/school11.jpeg',
+  { src: '/images/photo-gallery/school1.jpeg', alt: 'Mount Moriah International Christian School campus overview' },
+  { src: '/images/photo-gallery/school2.jpeg', alt: 'Students engaged in classroom activities at Mount Moriah' },
+  { src: '/images/photo-gallery/school3.jpeg', alt: 'Children participating in outdoor play and physical education' },
+  { src: '/images/photo-gallery/school4.jpeg', alt: 'Mount Moriah school students collaborating on a project' },
+  { src: '/images/photo-gallery/school5.jpeg', alt: 'Teacher helping a student with coursework at Mount Moriah' },
+  { src: '/images/photo-gallery/school6.jpeg', alt: 'Group of happy students in their school uniforms' },
+  { src: '/images/photo-gallery/school7.jpeg', alt: 'Art and creative learning activities at our Christian school' },
+  { src: '/images/photo-gallery/school8.jpeg', alt: 'Students participating in spiritual and character building activities' },
+  { src: '/images/photo-gallery/school9.jpeg', alt: 'Technology and computer learning in the classroom' },
+  { src: '/images/photo-gallery/school10.jpeg', alt: 'School library and reading time at Mount Moriah' },
+  { src: '/images/photo-gallery/school11.jpeg', alt: 'Extracurricular activities and talent development' },
 ]
 
 export default function PhotoGallery() {
@@ -27,12 +28,14 @@ export default function PhotoGallery() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {images.map((src, i) => (
+          {images.map((item, i) => (
             <div key={i} className="aspect-square rounded-xl overflow-hidden group cursor-pointer">
               <img
-                src={src}
-                alt="Students participating in school activities at Mount Moriah International Christian School"
+                src={item.src}
+                alt={item.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           ))}
