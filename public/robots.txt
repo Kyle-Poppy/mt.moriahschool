@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://mt-moriahschool.vercel.app/sitemap.xml
