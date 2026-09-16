@@ -26,6 +26,16 @@ export default function Home() {
           name="keywords"
           content="Mount Moriah School, Christian School Kenya, CBC School, Junior School, Primary School, Foundation Class, Nairobi"
         />
+
+        {/* Open Graph / Social Media Sharing Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mountmoriahinternationalchristianschool.com/" />
+        <meta property="og:title" content="Mount Moriah International Christian School" />
+        <meta property="og:description" content="Providing quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character." />
+        <meta property="og:image" content="https://www.mountmoriahinternationalchristianschool.com/images/logo.png" />
+
+        {/* Canonical Link - Tells Google this is the official URL */}
+        <link rel="canonical" href="https://www.mountmoriahinternationalchristianschool.com/" />
       </Helmet>
 
       <Hero />
