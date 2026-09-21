@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { CheckCircle, FileText, Calendar, Phone } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
+// IMPORTANT: Adjust this import path depending on where you saved ApplicationModal.tsx
+import ApplicationModal from '../components/ApplicationModal' 
 
 const levels = [
   {
@@ -40,6 +42,14 @@ const steps = [
 ]
 
 export default function Admissions() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedLevel, setSelectedLevel] = useState('')
+
+  const handleApplyClick = (levelLabel: string) => {
+    setSelectedLevel(`Apply for ${levelLabel}`)
+    setIsModalOpen(true)
+  }
+
   return (
     <>
     <Helmet>
@@ -95,10 +105,11 @@ export default function Admissions() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact"
+                <button 
+                  onClick={() => handleApplyClick(l.label)}
                   className="inline-block bg-accent-500 hover:bg-accent-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
                   Apply for {l.label}
-                </Link>
+                </button>
               </div>
             </div>
           ))}
@@ -126,6 +137,13 @@ export default function Admissions() {
           </div>
         </div>
       </section>
+
+      {/* Global Application Modal */}
+      <ApplicationModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        subject={selectedLevel} 
+      />
     </>
   )
 }

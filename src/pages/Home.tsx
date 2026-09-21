@@ -19,19 +19,19 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Mount Moriah International Christian School provides quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character."
+          content="Welcome to Mount Moriah International Christian School (also known as Mount Moriah School). We provide quality Christian education through the CBC curriculum, nurturing academic excellence, discipline, and godly character in Nairobi."
         />
 
         <meta
           name="keywords"
-          content="Mount Moriah School, Christian School Kenya, CBC School, Junior School, Primary School, Foundation Class, Nairobi"
+          content="Mount Moriah School, Mount Moriah International, Moriah International, Moriah School, Mount Moriah International Christian School, Moriah International Christian School, Christian School Kenya, CBC School Nairobi, Junior School, Primary School, Foundation Class, Nairobi"
         />
 
         {/* Open Graph / Social Media Sharing Tags */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mountmoriahinternationalchristianschool.com/" />
         <meta property="og:title" content="Mount Moriah International Christian School" />
-        <meta property="og:description" content="Providing quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character." />
+        <meta property="og:description" content="Welcome to Mount Moriah International Christian School. Providing quality Christian education through the CBC curriculum, nurturing academic excellence, discipline and godly character." />
         <meta property="og:image" content="https://www.mountmoriahinternationalchristianschool.com/images/logo.png" />
 
         {/* Canonical Link - Tells Google this is the official URL */}
