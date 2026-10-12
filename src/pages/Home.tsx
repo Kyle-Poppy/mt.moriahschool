@@ -38,8 +38,7 @@ export default function Home() {
         <link rel="canonical" href="https://www.mountmoriahinternationalchristianschool.com/" />
       </Helmet>
 
-      {/* Hidden H1 for SEO (fixes the Bing missing H1 error) */}
-      <h1 className="sr-only">Mount Moriah International Christian School</h1>
+    
       
       <Hero />
       <Features />
