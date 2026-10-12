@@ -19,7 +19,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Welcome to Mount Moriah International Christian School (also known as Mount Moriah School). We provide quality Christian education through the CBC curriculum, nurturing academic excellence, discipline, and godly character in Nairobi."
+          content="Welcome to Mount Moriah International Christian School. We provide quality CBC curriculum education, nurturing academic excellence and godly character."
         />
 
         <meta
@@ -38,6 +38,9 @@ export default function Home() {
         <link rel="canonical" href="https://www.mountmoriahinternationalchristianschool.com/" />
       </Helmet>
 
+      {/* Hidden H1 for SEO (fixes the Bing missing H1 error) */}
+      <h1 className="sr-only">Mount Moriah International Christian School</h1>
+      
       <Hero />
       <Features />
       <Stats />
